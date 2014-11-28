@@ -19,5 +19,5 @@ if (version_compare(phpversion(), '5.5.1', '<')) {
 	 . 'common'
 	 . DIRECTORY_SEPARATOR
 	 . 'phpversion.php';
+	 exit(1);
 }
-?>
