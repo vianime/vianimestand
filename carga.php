@@ -18,11 +18,12 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'languages' . LANG . '.ph
 
 // Definiciones
 define('DS', DIRECTORY_SEPARATOR);
-define('HEADER', dirname(__FILE__) . DS . 'header.php');
-define('FOOTER', dirname(__FILE__) . DS . 'footer.php');
-define('SHEADER', dirname(__FILE__) . DS . 'sheader.php');
-define('SFOOTER', dirname(__FILE__) . DS . 'sfooter.php');
-define('URLSITIO', $web);
-define('SITIO', dirname(__FILE__) . DS);
-define('TITULO', $titulopri);
+define('_HEADER', dirname(__FILE__) . DS . 'header.php');
+define('_FOOTER', dirname(__FILE__) . DS . 'footer.php');
+define('_SHEADER', dirname(__FILE__) . DS . 'sheader.php');
+define('_SFOOTER', dirname(__FILE__) . DS . 'sfooter.php');
+define('_URLSITIO', $web);
+define('_SITIO', dirname(__FILE__) . DS);
+define('_TITULO', $titulopri);
+define('_TIT', $titulo);
 ?>
