@@ -12,5 +12,12 @@
 
 // Verificación de versión de PHP. Debe ser igual o mayor a PHP 5.5
 if (version_compare(phpversion(), '5.5.1', '<')) {
+	require_once dirname(__FILE__)
+	 . DIRECTORY_SEPARATOR
+	 . 'vianime'
+	 . DIRECTORY_SEPARATOR
+	 . 'common'
+	 . DIRECTORY_SEPARATOR
+	 . 'phpversion.php';
 }
 ?>
