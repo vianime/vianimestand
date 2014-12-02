@@ -21,3 +21,12 @@ if (version_compare(phpversion(), '5.3.1', '<')) {
 	 . 'phpversion.php';
 	exit(1);
 }
+
+// Página de inicio
+define('_VIANIME_APP', 'vianime');
+define('_VIANIME_BASE', dirname($_SERVER['SCRIPT_NAME']));
+define('_VIANIME_ARCHIVO', $_SERVER['SCRIPT_NAME']);
+define('_VIANIME_DEST', 'index.php');
+
+// Cargando principal
+require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . _VIANIME_APP . DIRECTORY_SEPARATOR . _VIANIME_DEST;
