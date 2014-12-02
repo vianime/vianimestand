@@ -20,7 +20,7 @@
 <body>
     <center>
         <img src="vianime/common/images/9955043.png" title="VIAnime PHP Versión"><br>
-        <?php
+		<?php
 		printf('<strong>VIAnime:</strong> Necesitas como mínimo PHP 5.3.1 o una versión superior para ejecutar esta aplicación correctamente. Usted está usando la versión <strong>%s</strong>', phpversion());
 		?>
     </center>
