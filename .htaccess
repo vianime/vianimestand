@@ -1,0 +1,13 @@
+RewriteEngine on
+## Manejo de errores de Apache. Cuando se produzca uno de estos errores, redirigimos a una pagina especial desarrollada por nosotros.
+ErrorDocument 404 /index.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+Rewriterule ^install/paso1$ install/install.php [QSA,L]
+Rewriterule ^install/index$ install/index.php [QSA,L]
+Rewriterule ^install/paso2$ install/install2.php [QSA,L]
+Rewriterule ^install/paso3$ install/install3.php [QSA,L]
+
+Rewriterule ^index$ index.php [QSA,L]
